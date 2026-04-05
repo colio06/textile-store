@@ -7,7 +7,7 @@
 }
 /* the body styling  */
 body {
-  padding: 30px;
+  padding: 50px;
   background-color: whitesmoke;
   height: fit-content;
 }
@@ -109,14 +109,16 @@ h2 {
     }
   }
 }
-
+.contact{
+  padding: 30px;
+}
 footer {
-  background-color: rgb(201, 198, 198);
-  color: black;
+  background-color: rgb(133, 70, 19);
+  color: white;
   justify-items: center;
   text-align: center;
   padding: 30px;
-  border-radius: 0px;
+  border-radius: 20px;
 
   div {
     display: flex;
@@ -152,13 +154,17 @@ footer {
 
         ul {
           display: inline-flex;
-          flex-wrap: wrap;
+          flex-wrap:no-wrap;
           flex-direction: row;
           width: 100%;
 
           li {
             display: block;
-            margin: 10px;
+            margin: 5px;
+            a{
+                          padding: 7px;
+
+            }
           }
         }
       }
