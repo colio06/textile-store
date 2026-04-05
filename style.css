@@ -1,0 +1,182 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Cormorant Garamond;
+  border-radius: 20px;
+}
+/* the body styling  */
+body {
+  padding: 30px;
+  background-color: whitesmoke;
+  height: fit-content;
+}
+/* navbar from bootstrap and header is made sticky */
+header {
+  background-color: rgba(245, 245, 245, 0.315);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  /* fequently used elements are given general styling */
+  a {
+    color: black;
+    font-size: larger;
+    font-weight: 900;
+    padding: 15px;
+  }
+}
+
+.btn {
+  background-color: rgb(133, 70, 19);
+  color: beige;
+  padding: 15px;
+}
+.btn:hover {
+  color: rgb(133, 70, 19);
+  background-color: beige;
+  padding: 15px;
+}
+h2 {
+  margin: 25px;
+  text-align: center;
+}
+/* styled hero section and gave it a background and other features */
+.hero {
+  background-image: url(hero1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  filter: brightness(80%);
+  border-radius: 20px;
+  align-content: center;
+  /* aligned hero text to the left in main axis and center in crosesd axis */
+  .hero-text {
+    padding: 10px;
+    justify-self: start;
+    text-align: center;
+    color: rgb(133, 70, 19);
+    width: fit-content;
+    padding: 20px;
+    font-size: 80px;
+    font-weight: 800;
+  }
+}
+/* styled the cards and there containers (.col-md-3) making them have the same height and width */
+.col-md-3 {
+  .card {
+    height: 550px;
+
+    img {
+      height: 330px;
+      width: 100%;
+    }
+  }
+}
+/* adjusted the width and height of the carousel to make it fit the "house of textile section" */
+.carousel {
+  img {
+    height: 470px;
+    width: 100%;
+  }
+}
+
+/* styled the div that holds flexy and carousel in a row container */
+.collection {
+  .row {
+    justify-content: center;
+
+    .col-md-6 {
+      height: 500px;
+      width: 40%;
+      /* used this styling to arrange links in my desired format */
+      .flexy {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+          display: inline-flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          width: 100%;
+
+          li {
+            display: block;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(201, 198, 198);
+  color: black;
+  justify-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 0px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .fa-brands {
+    color: white;
+  }
+
+  .fa-brands:hover {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+
+    .hero-text {
+    color: rgb(133, 70, 19);
+    background-color: rgba(255, 255, 255, 0.788);
+  }
+    .collection {
+  .row {
+    justify-content: center;
+
+    .col-md-6 {
+      height: 500px;
+      width: 100%;
+      
+      .flexy {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+          display: inline-flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          width: 100%;
+
+          li {
+            display: block;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.col-md-3 {
+    width: 100%;
+    margin: 20px;
+  .card {
+    height: 550px;
+    width: 100%;
+
+    img {
+      height: 330px;
+      width: 100%;
+    }
+  }
+}
+
+}
